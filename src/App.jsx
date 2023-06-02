@@ -1,10 +1,18 @@
-import { Box, Heading } from '@chakra-ui/react'
+import { chakra } from '@chakra-ui/react'
+import { SignUpContainer } from './components/SignUpContainer'
 
 function App () {
   return (
-    <Box>
-      <Heading fontFamily='body'>Hello World</Heading>
-    </Box>
+    <chakra.main
+      w='100%'
+      minH='100vh'
+      bgColor='neutral.charcoal-gray'
+      display='flex'
+      alignItems='center'
+      justifyContent='center'
+    >
+      <SignUpContainer />
+    </chakra.main>
   )
 }
 

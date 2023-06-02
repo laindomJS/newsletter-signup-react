@@ -13,7 +13,7 @@ export const theme = extendTheme({
     }
   },
   fonts: {
-    headings: `'Roboto', sans-serif`,
+    heading: `'Roboto', sans-serif`,
     body: `'Roboto', sans-serif`
   }
 })
