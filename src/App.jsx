@@ -1,7 +1,12 @@
+import { useContext } from 'react'
 import { chakra } from '@chakra-ui/react'
+import { FormCtx } from './context/FormContext'
 import { SignUpContainer } from './components/SignUpContainer'
+import { SignUpSucess } from './components/SignUpSucess'
 
 function App () {
+  const { isValid } = useContext(FormCtx)
+
   return (
     <chakra.main
       w='100%'
@@ -11,7 +16,7 @@ function App () {
       alignItems='center'
       justifyContent='center'
     >
-      <SignUpContainer />
+      {isValid ? (<SignUpSucess />) : (<SignUpContainer />)}
     </chakra.main>
   )
 }

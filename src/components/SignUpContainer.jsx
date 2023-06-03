@@ -8,12 +8,10 @@ export const SignUpContainer = () => {
     <Box
       as='article'
       display='flex'
-      flexDirection={{ base: 'column', md: 'row-reverse' }}
+      flexDirection='column'
+      w='100%'
+      h='750px'
       bgColor='white'
-      w={{ base: '100%', md: '45%' }}
-      h='fit-content'
-      borderRadius={{ base: '0px', md: '20px' }}
-      p={{ base: '0px', md: '1rem' }}
     >
       <Image src={illustrationMobile} />
       <SignUpText />
