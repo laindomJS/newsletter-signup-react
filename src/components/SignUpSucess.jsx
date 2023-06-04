@@ -18,7 +18,7 @@ export const SignUpSucess = () => {
           <Heading fontSize='32px' lineHeight='1'>Thanks for subscribing!</Heading>
           <Text fontSize='14px' mt='1rem' lineHeight='1.6'>
             A confirmation email has been sent to
-            <chakra.span fontWeight='700'>ash@loremcompany.com </chakra.span>
+            <chakra.span fontWeight='700'> ash@loremcompany.com </chakra.span>
             Please open it and click the button inside to confirm your subscription
           </Text>
         </Box>
