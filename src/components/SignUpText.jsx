@@ -19,7 +19,7 @@ export const SignUpText = () => {
         <List mt='1.5rem' spacing={3} color='neutral.dark-slate-grey' fontSize='15px'>
           <ListItem>Product discovery and building what matters</ListItem>
           <ListItem>Measuring to ensure updates are a success</ListItem>
-          <ListItem>And mucho more!</ListItem>
+          <ListItem>And much more!</ListItem>
         </List>
       </Box>
     </>
