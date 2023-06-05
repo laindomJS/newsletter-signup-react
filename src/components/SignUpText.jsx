@@ -1,4 +1,5 @@
 import { Box, Heading, Text, List, ListItem } from '@chakra-ui/react'
+import { SignUpForm } from './SignUpForm'
 
 export const SignUpText = () => {
   return (
@@ -21,6 +22,8 @@ export const SignUpText = () => {
           <ListItem>Measuring to ensure updates are a success</ListItem>
           <ListItem>And much more!</ListItem>
         </List>
+
+        <SignUpForm />
       </Box>
     </>
   )

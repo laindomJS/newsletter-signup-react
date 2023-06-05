@@ -1,7 +1,11 @@
 import { Box, Image, Heading, Text, Button, chakra } from '@chakra-ui/react'
+import { useContext } from 'react'
+import { FormCtx } from '../context/FormContext'
 import iconSuccess from '../assets/icon-success.svg'
 
 export const SignUpSucess = () => {
+  const { email, dissmiss } = useContext(FormCtx)
+
   return (
     <Box
       as='article'
@@ -18,7 +22,7 @@ export const SignUpSucess = () => {
           <Heading fontSize='32px' lineHeight='1'>Thanks for subscribing!</Heading>
           <Text fontSize='14px' mt='1rem' lineHeight='1.6'>
             A confirmation email has been sent to
-            <chakra.span fontWeight='700'> ash@loremcompany.com </chakra.span>
+            <chakra.span fontWeight='700'> {email} </chakra.span>
             Please open it and click the button inside to confirm your subscription
           </Text>
         </Box>
@@ -30,6 +34,7 @@ export const SignUpSucess = () => {
         w='290px'
         h='50px'
         bottom='10px'
+        onClick={dissmiss}
       >
         Dismiss message
       </Button>
