@@ -47,8 +47,9 @@ export const SignUpSucess = () => {
       <Button
         bgColor='neutral.dark-slate-grey'
         w={{ base: '100%', md: '100%' }}
-        h='50px'
         mt={{ base: '35%', md: '0' }}
+        h='50px'
+        color='white'
         onClick={dissmiss}
         _hover={{ bgColor: 'primary.custom-tomato' }}
       >
