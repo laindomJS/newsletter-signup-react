@@ -1,4 +1,5 @@
-import { Box, Heading, Text, List, ListItem } from '@chakra-ui/react'
+import { Box, Heading, Text, List, ListItem, ListIcon } from '@chakra-ui/react'
+import { CheckCircleIcon } from '@chakra-ui/icons'
 import { SignUpForm } from './SignUpForm'
 
 export const SignUpText = () => {
@@ -7,10 +8,10 @@ export const SignUpText = () => {
       <Box
         as='section'
         mt='1rem'
-        p='1rem'
+        p={{ base: '1rem', md: '2.5rem' }}
         color='neutral.dark-slate-grey'
       >
-        <Heading mb='.8rem' fontSize='35px'>
+        <Heading mb='.8rem' fontSize={{ base: '35px', md: '45px' }}>
           Stay updated!
         </Heading>
         <Text fontSize='15px'>
@@ -18,9 +19,18 @@ export const SignUpText = () => {
         </Text>
 
         <List mt='1.5rem' spacing={3} color='neutral.dark-slate-grey' fontSize='15px'>
-          <ListItem>Product discovery and building what matters</ListItem>
-          <ListItem>Measuring to ensure updates are a success</ListItem>
-          <ListItem>And much more!</ListItem>
+          <ListItem>
+            <ListIcon boxSize={6} as={CheckCircleIcon} color='primary.custom-tomato' />
+            Product discovery and building what matters
+          </ListItem>
+          <ListItem>
+            <ListIcon boxSize={6} as={CheckCircleIcon} color='primary.custom-tomato' />
+            Measuring to ensure updates are a success
+          </ListItem>
+          <ListItem>
+            <ListIcon boxSize={6} as={CheckCircleIcon} color='primary.custom-tomato' />
+            And much more!
+          </ListItem>
         </List>
 
         <SignUpForm />

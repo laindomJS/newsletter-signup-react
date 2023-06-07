@@ -11,10 +11,9 @@ export const SignUpForm = () => {
       w='100%'
       mt='2.8rem'
     >
-      <FormControl isInvalid={isError}>
+      <FormControl isInvalid={isError} isRequired>
 
         <Box
-          w='full'
           display='flex'
           justifyContent='space-between'
           alignItems='flex-start'
@@ -47,7 +46,9 @@ export const SignUpForm = () => {
           borderColor='neutral.custom-grey'
           placeholder='email@company.com' variant='outline'
           value={email}
+          autoComplete='off'
           _placeholder={{ color: 'neutral.custom-grey', fontSize: '15px' }}
+          _hover={{ borderColor: 'neutral.custom-grey' }}
           onChange={handleEmail}
         />
 
@@ -59,6 +60,7 @@ export const SignUpForm = () => {
           mt='1rem'
           w='full'
           onClick={handleSubmit}
+          _hover={{ bgColor: 'primary.custom-tomato' }}
         >
           Subscribe to monthly newsletter
         </Button>

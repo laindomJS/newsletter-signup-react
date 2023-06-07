@@ -1,19 +1,26 @@
-import { Box, Image } from '@chakra-ui/react'
+import { Box, Image, useBreakpointValue } from '@chakra-ui/react'
 import { SignUpText } from './SignUpText'
 import illustrationDesktop from '../assets/illustration-sign-up-desktop.svg'
 import illustrationMobile from '../assets/illustration-sign-up-mobile.svg'
 
 export const SignUpContainer = () => {
+  const imageVariant = useBreakpointValue({
+    base: illustrationMobile,
+    md: illustrationDesktop
+  })
+
   return (
     <Box
       as='article'
       display='flex'
       flexDirection={{ base: 'column', md: 'row-reverse' }}
-      w='100%'
-      h='750px'
+      w={{ base: '100%', md: '80%', lg: '60%' }}
+      borderRadius={{ base: '0', md: '12px' }}
+      h={{ base: 'fit-content', md: '520px' }}
+      p={{ base: '0', md: '1rem' }}
       bgColor='white'
     >
-      <Image src={illustrationMobile} srcSet={`${illustrationDesktop}600w`} />
+      <Image src={imageVariant} alt='illustration of screens and stadistics' />
       <SignUpText />
     </Box>
   )
