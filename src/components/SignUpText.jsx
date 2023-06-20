@@ -7,7 +7,7 @@ export const SignUpText = () => {
     <>
       <Box
         as='section'
-        mt='1rem'
+        mt={{ base: '1rem', md: '0rem' }}
         p={{ base: '1rem', md: '2.5rem' }}
         color='neutral.dark-slate-grey'
       >

@@ -16,11 +16,14 @@ export const SignUpContainer = () => {
       flexDirection={{ base: 'column', md: 'row-reverse' }}
       w={{ base: '100%', md: '80%', lg: '60%' }}
       borderRadius={{ base: '0', md: '12px' }}
-      h={{ base: 'fit-content', md: '520px' }}
+      h={{ base: 'fit-content', md: '520px', lg: '530px' }}
       p={{ base: '0', md: '1rem' }}
       bgColor='white'
     >
-      <Image src={imageVariant} alt='illustration of screens and stadistics' />
+      <Image
+        src={imageVariant}
+        alt='illustration of screens and stadistics'
+      />
       <SignUpText />
     </Box>
   )

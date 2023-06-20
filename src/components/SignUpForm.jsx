@@ -9,7 +9,7 @@ export const SignUpForm = () => {
     <Box
       as='section'
       w='100%'
-      mt='2.8rem'
+      mt={{ base: '2.8rem', md: '2rem', lg: '1.8rem' }}
     >
       <FormControl isInvalid={isError} isRequired>
 
